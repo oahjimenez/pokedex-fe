@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { getPokedex } from './utils/getPokedex';
 
 function App() {
+
+  getPokedex({}).then(() => { console.log("done dex")})
+
   return (
     <div className="App">
       <header className="App-header">
